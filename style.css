@@ -1,0 +1,99 @@
+body {
+  background-image: url(./assets/nature.webp);
+  background-image: url(./assets/advice.webp);
+  background-image: url(./assets/eye.webp);
+  background-image: url(./assets/trees.webp);
+  background-image: url(./assets/bob-van-aubel-d2-420SJPNc-unsplash.jpg);
+  background-image: url(./assets/bruce-jastrow-l1H0sF8-v0k-unsplash.jpg);
+  background-image: url(./assets/cai-fang-Q5tLqKzLZc8-unsplash.jpg);
+  background-image: url(./assets/david-becker-5XwOb9Inyeg-unsplash.jpg);
+  background-image: url(./assets/david-dvoracek-vE_qxEQggj0-unsplash.jpg);
+  background-image: url(./assets/dominik-jirovsky-re2LZOB2XvY-unsplash.jpg);
+  background-image: url(./assets/gio-chanturia-2aGoA1zcWfI-unsplash.jpg);
+  background-image: url(./assets/giuseppe-mondi-fJWYwHWYQpY-unsplash.jpg);
+  background-image: url(./assets/illiya-vjestica-W5FdAcHp7l8-unsplash.jpg);
+  background-image: url(./assets/iman-gozal-5iQWgow3_S0-unsplash.jpg);
+  background-image: url(./assets/jairph-CaU1lKpWqM8-unsplash.jpg);
+  background-image: url(./assets/jairph-Edx0NpJ29fQ-unsplash.jpg);
+  background-image: url(./assets/jairph-ULygfvh-Qws-unsplash.jpg);
+  background-image: url(./assets/joshua-earle-6fe4TDRkK30-unsplash.jpg);
+  background-image: url(./assets/julia-cheperis-WFQ5AXrXDFs-unsplash.jpg);
+  background-image: url(./assets/lachlan-cruickshank-S9v_EPJfGys-unsplash.jpg);
+  background-image: url(./assets/maksym-mazur-dYMHjGwsyv4-unsplash.jpg);
+  background-image: url(./assets/marek-piwnicki-LQYxMsOljAI-unsplash.jpg);
+  background-image: url(./assets/max-letek-fp-f0-reO7U-unsplash.jpg);
+  background-image: url(./assets/mike-swigunski-qlJ9nGQS6x0-unsplash.jpg);
+  background-image: url(./assets/mike-swigunski-qlJ9nGQS6x0-unsplash.jpg);
+  background-image: url(./assets/mostafa-meraji-k0fS9Wenggc-unsplash.jpg);
+  background-image: url(./assets/mostafa-meraji-x_v1_1BAbu0-unsplash.jpg);
+  background-image: url(./assets/neom-4q87Z96NBYg-unsplash.jpg);
+  background-image: url(./assets/neom-9Jgo0Ix_TRw-unsplash.jpg);
+  background-image: url(./assets/neom-nMzbnMzMjYU-unsplash.jpg);
+  background-image: url(./assets/neom-NPDnHmYsl6Y-unsplash.jpg);
+  background-image: url(./assets/neom-r4ZSR0cKJw8-unsplash.jpg);
+  background-image: url(./assets/neom-THlO6Mkf5uI-unsplash.jpg);
+  background-image: url(./assets/neom-tUqMoFE_eAE-unsplash.jpg);
+  background-image: url(./assets/neom-ud9NlvvEzUI-unsplash.jpg);
+  background-image: url(./assets/neom-wMHauMZiQjg-unsplash.jpg);
+  background-image: url(./assets/neom-wSJmlKMecHU-unsplash.jpg);
+  background-image: url(./assets/neom-YeLs9lJDx9M-unsplash.jpg);
+  background-image: url(./assets/neom-zYy15TtlgGk-unsplash.jpg);
+  background-image: url(./assets/patrick-schneider-8bPJ0vagphw-unsplash.jpg);
+  background-image: url(./assets/tobias-reich-2YH7MEMuly4-unsplash.jpg);
+  background-image: url(./assets/tobias-reich-VltYe88rkt8-unsplash.jpg);
+  background-image: url(./assets/viktor-bystrov-Gi0OMNguFaw-unsplash.jpg);
+  background-image: url(./assets/yousef-espanioly-DA_tplYgTow-unsplash.jpg);
+  /* next time i can get images API from Unsplash webpage */
+  /* unsplash access key: TAeHqBoD7-OlTiaT7QPMNk4EDwv6Xvf5dK-EwQ3e2Zs */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+.title {
+  margin: auto;
+  width: 100%;
+  max-width: 40rem;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.card {
+  width: 90%;
+  max-width: 700px;
+  padding: 10rem 5rem;
+  font-size: 2.5rem;
+
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+
+  backdrop-filter: blur(0.3rem);
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+  border-top-color: rgba(225, 225, 225, 0.5);
+  border-left-color: rgba(225, 225, 225, 0.5);
+  border-bottom-color: rgba(225, 225, 225, 0.1);
+  border-right-color: rgba(225, 225, 225, 0.1);
+}
+
+.cb1 {
+  background-color: rgba(225, 225, 225, 0.1);
+}
+
+.card-number {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 8rem;
+  z-index: -1;
+  position: absolute;
+  top: -1rem;
+  right: 2.5rem;
+}
+
+.btn {
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}

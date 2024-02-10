@@ -1,11 +1,10 @@
 # Frontend Mentor - Advice generator app solution
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
+This project is a simple web application that generates random advice and displays it on a card. It uses the Advice Slip JSON API to fetch random advice.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -14,11 +13,12 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Credits](#Credits)
 - [Acknowledgments](#acknowledgments)
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img src="./images/Screenshot from 2024-02-09 22-33-08.png" width="350px">
 
 ### Links
 
@@ -27,66 +27,75 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## My process
 
+## Features
+
+- Fetches random advice from the Advice Slip JSON API.
+- Displays the fetched advice on a card.
+- Allows users to generate new advice by clicking a button.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS (Bootstrap 5)
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="d-flex justify-content-center">
+  <div class="card m-2 cb1 text-content">
+    <div class="card-body">
+      <span class="card-number fw-bold" id="idNumber">--</span>
+      <h2 class="card-title mb-4"></h2>
+      <p class="carttext" id="results">You are cool</p>
+      <a href="" class="btn btn-outline-light" id="getData"> New Advice</a>
+    </div>
+  </div>
+</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card {
+  width: 90%;
+  max-width: 700px;
+  padding: 10rem 5rem;
+  font-size: 2.5rem;
+
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+
+  backdrop-filter: blur(0.3rem);
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+  border-top-color: rgba(225, 225, 225, 0.5);
+  border-left-color: rgba(225, 225, 225, 0.5);
+  border-bottom-color: rgba(225, 225, 225, 0.1);
+  border-right-color: rgba(225, 225, 225, 0.1);
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+async function fetchAdvice() {
+  try {
+    const response = await fetch("https://api.adviceslip.com/advice");
+    const data = await response.json();
+    adviceText.textContent = data.slip.advice;
+  } catch (error) {
+    console.error("Error fetching advice:", error);
+    adviceText.textContent = "Failed to fetch advice.";
+  }
+}
 ```
 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-## HTTP status codes
+## Credits
+
+- The background images are sourced from Unsplash.
+- The Advice Slip JSON API is used to fetch random advice.
 
 <img src="./images/HTTP status codes.jpeg" alt="HTTP status codes" >
-
-## The challenge
-
-Your challenge is to build out this advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
-
-Your users should be able to:
-
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking the dice icon
-
-## Building your project
-
-workflow. Below is a suggested process...
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/).
-2. Configure your repository to publish your code to a web address.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Submitting your solution
